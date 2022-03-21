@@ -1,0 +1,13 @@
+{% extends "main.html" %}
+{% block content %}
+    <main>
+        <div>
+            <h2>Hello</h2>
+            {% if created %}
+                <p>Welcome to cyclisme {{ request.user }}</p>
+            {% else %}
+                <p>Welcome back {{ request.user }}</p>
+            {% endif %}
+        </div>
+    </main>
+{% endblock %}
