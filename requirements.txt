@@ -15,6 +15,10 @@ certifi==2021.10.8
 charset-normalizer==2.0.12
     # via requests
 django==4.0.3
+    # via
+    #   -r requirements.in
+    #   djangorestframework
+djangorestframework==3.13.1
     # via -r requirements.in
 idna==3.3
     # via requests
@@ -37,6 +41,10 @@ pytest-django==4.5.2
     # via -r requirements.in
 pytest-mock==3.7.0
     # via -r requirements.in
+python-dotenv==0.19.2
+    # via -r requirements.in
+pytz==2022.1
+    # via djangorestframework
 requests==2.27.1
     # via -r requirements.in
 sqlparse==0.4.2
