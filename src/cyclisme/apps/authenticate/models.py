@@ -1,5 +1,6 @@
 from datetime import datetime
 
+import pytz
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
@@ -38,7 +39,7 @@ class User(AbstractUser):
         self.authentication.access_token = authentication_response.access_token
         self.authentication.refresh_token = authentication_response.refresh_token
         self.authentication.expires_in = authentication_response.expires_in
-        self.authentication.expires_at = datetime.fromtimestamp(authentication_response.expires_at)
+        self.authentication.expires_at = datetime.fromtimestamp(authentication_response.expires_at, tz=pytz.UTC)
         self.authentication.save()
 
     def __str__(self):
