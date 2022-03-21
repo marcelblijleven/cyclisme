@@ -1,8 +1,8 @@
 {% extends "main.html" %}
 {% block content %}
     <main>
+        <h1>Welcome</h1>
         <div>
-            <h2>Hello</h2>
             {% if created %}
                 <p>Welcome to cyclisme {{ request.user }}</p>
             {% else %}
