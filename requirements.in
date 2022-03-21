@@ -1,0 +1,11 @@
+-e file:.
+
+# General
+Django==4.0.3
+djangorestframework==3.13.1
+requests==2.27.1
+
+# Testing
+pytest==7.1.0
+pytest-django==4.5.2
+pytest-mock==3.7.0
